@@ -5,21 +5,21 @@
 class Gotodo < Formula
   desc "A tiny, delicate todo CLI written in Go"
   homepage "https://github.com/ethanbao27/gotodo"
-  version "1.0.6"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ethanbao27/gotodo/releases/download/v1.0.6/gotodo_1.0.6_darwin_amd64.tar.gz"
-      sha256 "7ab8a2a568939c33bd5b228c8fa35c12bca883cb1d038ea9dfef8299f616837b"
+      url "https://github.com/ethanbao27/gotodo/releases/download/v1.1.0/gotodo_1.1.0_darwin_amd64.tar.gz"
+      sha256 "0f8f9f0f3a8e219a9006644dc9e26f57cfa09ba94b273a8f48e7a06316619018"
 
       def install
         bin.install "gotodo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ethanbao27/gotodo/releases/download/v1.0.6/gotodo_1.0.6_darwin_arm64.tar.gz"
-      sha256 "9690274ed283998b777a42282bc0f947bd9edb488a4f61d61d96fa8dad16be6e"
+      url "https://github.com/ethanbao27/gotodo/releases/download/v1.1.0/gotodo_1.1.0_darwin_arm64.tar.gz"
+      sha256 "8e883f5ccc6017f06d6ee45f841b6f216eab820454f63c4913ab288d09fab6f9"
 
       def install
         bin.install "gotodo"
@@ -29,15 +29,15 @@ class Gotodo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ethanbao27/gotodo/releases/download/v1.0.6/gotodo_1.0.6_linux_amd64.tar.gz"
-      sha256 "94e064154b1ad5d5f6aab6e5b8761fb81067eab486475a636713e0b4e4d9536d"
+      url "https://github.com/ethanbao27/gotodo/releases/download/v1.1.0/gotodo_1.1.0_linux_amd64.tar.gz"
+      sha256 "003f2066dc0f9b34894baa6266590076d7698df5b50a1b91f75db637118982eb"
       def install
         bin.install "gotodo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ethanbao27/gotodo/releases/download/v1.0.6/gotodo_1.0.6_linux_arm64.tar.gz"
-      sha256 "9ff564e381ca928e83bae7a35a970d4d6be1c9f042e942a4fd8180bc6f27ac80"
+      url "https://github.com/ethanbao27/gotodo/releases/download/v1.1.0/gotodo_1.1.0_linux_arm64.tar.gz"
+      sha256 "b478d46448b4d53460a62eeaefa18198412e3c14733a90923d29d853e6341b44"
       def install
         bin.install "gotodo"
       end
